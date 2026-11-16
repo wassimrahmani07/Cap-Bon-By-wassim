@@ -1,0 +1,57 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: var(--dark-color);
+}
+
+/* Personnalisation de la Navbar */
+.navbar-brand {
+    letter-spacing: 0.5px;
+    color: #ffc107 !important;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+    transition: color 0.3s ease;
+}
+
+/* Transitions et cartes */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Style de l'agenda et des tableaux */
+.table caption {
+    caption-side: top;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* Media Query personnalisée */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.2rem;
+    }
+    
+    .card-img-top {
+        height: 160px;
+    }
+}
+#maps 
+{
+    border-radius: 15px;
+}

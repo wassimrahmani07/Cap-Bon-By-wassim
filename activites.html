@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap Bon Explorer - Catalogue des Activités</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css_style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="accueil.html">Cap Bon Explorer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="accueil.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="activites.html">Activités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservation.html">Réservation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact & FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 pt-5">
+        <h1 class="text-center mb-4">Catalogue des Activités</h1>
+        
+        <!-- Filtres et Recherche -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-6">
+                <input type="text" id="txtRecherche" class="form-control" placeholder="Rechercher par titre ou lieu...">
+            </div>
+            <div class="col-md-6">
+                <select id="selCategorie" class="form-select">
+                    <option value="Toutes">Toutes les catégories</option>
+                    <option value="Culture">Culture</option>
+                    <option value="Artisanat">Artisanat</option>                    
+                </select>
+            </div>
+        </div>
+
+
+        <!-- Conteneur des cartes d'activités -->
+        <div class="row g-4" id="activitiesContainer">
+            <!-- A01 -->
+            <div class="col-md-4 carte-item" data-categorie="Culture" data-titre="découverte de la médina - nabeul">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/medina.jpg" class="card-img-top" alt="Médina de Nabeul">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Culture</span>
+                        <h5 class="card-title">Découverte de la médina - Nabeul</h5>
+                        <p class="card-text text-small text-muted">Durée : 2 h | <strong>10 TND</strong></p>
+                        <p class="card-text">Explorez les ruelles pittoresques, les marchés traditionnels et l'histoire unique de la médina de Nabeul.</p>
+                        <a href="reservation.html" class="btn btn-success btn-sm">Réserver</a>
+                    </div>
+                </div>
+            </div>
+            <!-- A02 -->
+             <div class="col-md-4 carte-item" data-categorie="Culture" data-titre="découverte de la médina - hammamet">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/hamamet.jpg" class="card-img-top" alt="Médina de Hammamet">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Culture</span>
+                        <h5 class="card-title">Découverte de la médina - Hammamet </h5>
+                        <p class="card-text text-small text-muted">Durée : 2 h 30 m | <strong>25 TND</strong></p>
+                        <p class="card-text">Promenez-vous le long de la plage dorée bordée de barques colorées et admirez les imposants remparts historiques.</p>
+                        <a href="reservation.html" class="btn btn-success btn-sm">Réserver</a>
+                    </div>
+                </div>
+            </div> 
+            <!-- A03 -->             
+             <div class="col-md-4 carte-item" data-categorie="Artisanat" data-titre="souk nabeul">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/souk1.webp" class="card-img-top" alt="Souk Nabeul">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Artisanat</span>
+                        <h5 class="card-title">Souk Nabeul</h5>
+                        <p class="card-text text-small text-muted">Durée : 1 h | <strong>10 TND</strong></p>
+                        <p class="card-text">Explorez les marchés traditionnels de la médina de Nabeul.</p>
+                        <a href="reservation.html" class="btn btn-success btn-sm">Réserver</a>
+                    </div>
+                </div>
+            </div>
+             <!-- A04 -->             
+             <div class="col-md-4 carte-item" data-categorie="Artisanat" data-titre="souk nabeul">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/souk2.jpg" class="card-img-top" alt="Souk Nabeul">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Artisanat</span>
+                        <h5 class="card-title">Souk Nabeul</h5>
+                        <p class="card-text text-small text-muted">Durée : 1 h | <strong>15 TND</strong></p>
+                        <p class="card-text">Explorez les marchés traditionnels de la médina de Nabeul.</p>
+                        <a href="reservation.html" class="btn btn-success btn-sm">Réserver</a>
+                    </div>
+                </div>
+            </div>
+            <!-- A05 -->             
+             <div class="col-md-4 carte-item" data-categorie="Artisanat" data-titre="souk nabeul">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/souk3.jfif" class="card-img-top" alt="Souk Nabeul">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Artisanat</span>
+                        <h5 class="card-title">Souk Nabeul</h5>
+                        <p class="card-text text-small text-muted">Durée : 1 h | <strong>15 TND</strong></p>
+                        <p class="card-text">Explorez les marchés traditionnels de la médina de Nabeul.</p>
+                        <a href="reservation.html" class="btn btn-success btn-sm">Réserver</a>
+                    </div>
+                </div>
+            </div>
+            <!-- A06 -->             
+             <div class="col-md-4 carte-item" data-categorie="Artisanat" data-titre="souk nabeul">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/souk4.webp" class="card-img-top" alt="Souk Nabeul">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Artisanat</span>
+                        <h5 class="card-title">Souk Nabeul</h5>
+                        <p class="card-text text-small text-muted">Durée : 1 h | <strong>10 TND</strong></p>
+                        <p class="card-text">Explorez les marchés traditionnels de la médina de Nabeul.</p>
+                        <a href="reservation.html" class="btn btn-success btn-sm">Réserver</a>
+                    </div>
+                </div>
+            </div>
+            <!-- A07 -->             
+             <div class="col-md-4 carte-item" data-categorie="Culture" data-titre="souk nabeul">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/klibia.jpeg" class="card-img-top" alt="Souk Nabeul">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Culture</span>
+                        <h5 class="card-title">Kélibia, la ville bleue</h5>
+                        <p class="card-text text-small text-muted">Durée : 3 h  | <strong>30 TND</strong></p>
+                        <p class="card-text"> Explorez  La Ville Bleue Klibia  de Nabeul.</p>
+                        <a href="reservation.html" class="btn btn-success btn-sm">Réserver</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div id="msgAucun" class="alert">Aucune activité trouvée.</div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026-2027 Cap Bon Explorer - ISET Nabeul</p>
+        </div>
+    </footer>
+    <script src="js_activites.js"></script>
+    <script>
+        document.getElementById("txtRecherche").addEventListener("input", filtrerActivites);
+        document.getElementById("selCategorie").addEventListener("change", filtrerActivites);
+    </script>
+</body>
+</html>

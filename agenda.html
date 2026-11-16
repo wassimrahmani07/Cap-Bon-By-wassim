@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap Bon Explorer - Agenda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css_style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="accueil.html">Cap Bon Explorer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="accueil.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="activites.html">Activités</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="agenda.html">Agenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservation.html">Réservation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact & FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 pt-5">
+        <h1 class="text-center mb-3">Agenda des Événements</h1>
+        <p class="text-center text-muted mb-4">Consultez les dates programmées pour nos expériences exclusives à travers le Cap Bon.</p>
+
+        <!-- Tableau Responsive Bootstrap -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle border">
+                <caption class="text-center">Calendrier officiel des événements Cap Bon Explorer</caption>
+                <thead class="table-dark">
+                    <tr>
+                        <th>Date</th>
+                        <th>Activité</th>
+                        <th>Heure</th>
+                        <th>Lieu</th>
+                        <th>Tarif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>05/12/2026</td>
+                        <td>Promenade photographique</td>
+                        <td>09:30</td>
+                        <td>Hammamet</td>
+                        <td>30 TND</td>
+                    </tr>
+                    <tr>
+                        <td>12/12/2026</td>
+                        <td>Initiation à la poterie</td>
+                        <td>10:00</td>
+                        <td>Nabeul</td>
+                        <td>10 TND</td>
+                    </tr>
+                    <tr>
+                        <td>19/12/2026</td>
+                        <td>Randonnée découverte</td>
+                        <td>08:30</td>
+                        <td>Klibia</td>
+                        <td>30 TND</td>
+                    </tr>
+                    <tr>
+                        <td>09/01/2027</td>
+                        <td>Découverte de la médina</td>
+                        <td>10:00</td>
+                        <td>Nabeul</td>
+                        <td>25 TND</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>23/01/2027</td>
+                        <td>Découverte du marché local</td>
+                        <td>09:00</td>
+                        <td>Nabeul</td>
+                        <td>15 TND</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Zone Prochaines expériences -->
+        <div class="mt-5 text-center bg-light p-4 rounded">
+            <h3>Prochaines expériences</h3>
+            <p class="text-muted">Vous avez repéré un événement ? Retrouvez toutes nos offres ou réservez votre place dès maintenant.</p>
+            <a href="activites.html" class="btn btn-outline-primary me-2">Voir le catalogue des activités</a>
+            <a href="reservation.html" class="btn btn-success">Accéder au simulateur</a>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026-2027 Cap Bon Explorer - ISET Nabeul</p>
+        </div>
+    </footer>
+
+</body>
+</html>
